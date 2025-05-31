@@ -1,13 +1,13 @@
-import { CircleSlash, DollarSign, ShoppingCart, Star } from 'lucide-react';
+import { CircleSlash, DollarSign, ShoppingCart } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import Button from '@/components/Button';
+import Stars from '@/components/Stars';
 import { ProductType } from '../types';
 
 function ProductItem({ product }: { product: ProductType }) {
   const { description, id, image, name, price, rating, stock_status } = product;
-  const stars = Array.from({ length: Math.round(rating) });
 
   return (
     <li>
@@ -35,17 +35,11 @@ function ProductItem({ product }: { product: ProductType }) {
             <DollarSign className='size-5' />
             {price}
           </p>
-          <div className='flex gap-0.5'>
-            {stars.map((_, i) => (
-              <Star
-                key={i}
-                className='size-4 text-indigo-600 fill-indigo-400'
-              />
-            ))}
-          </div>
+
+          <Stars rating={rating} />
         </div>
 
-        {stock_status ? (
+        {!stock_status ? (
           <Button disabled icon={<CircleSlash />}>
             Out of Stock
           </Button>

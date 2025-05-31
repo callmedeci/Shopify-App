@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import { ProductsType, ProductType } from '../types';
 
 export async function getProducts(): Promise<ProductsType> {
@@ -11,7 +12,7 @@ export async function getProducts(): Promise<ProductsType> {
 
 export async function getProductById(id: string): Promise<ProductType> {
   const res = await fetch(`http://localhost:8080/products/${id}`);
-  if (res.status !== 200) throw new Error('Failed to fetch product');
+  if (res.status !== 200) notFound();
 
   const data = await res.json();
 

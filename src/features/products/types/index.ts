@@ -7,6 +7,7 @@ export type ProductType = {
   rating: number;
   description: string;
   category: string;
+  intro: string;
 };
 
 export type ProductsType = ProductType[];
