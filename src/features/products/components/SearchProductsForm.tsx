@@ -2,18 +2,11 @@
 
 import Input from '@/components/Input';
 import { Search } from 'lucide-react';
-import { useEffect, type FormEvent } from 'react';
+import { type FormEvent } from 'react';
 import { useSearchQueryParams } from '../hooks/useSearchQueryParams';
 
 function SearchProductsForm() {
   const { setQuery } = useSearchQueryParams('query');
-
-  useEffect(
-    function () {
-      setQuery('');
-    },
-    [setQuery]
-  );
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -23,7 +16,7 @@ function SearchProductsForm() {
       query: string;
     };
 
-    if (!query) return setQuery('');
+    if (!query) return setQuery(null);
 
     setQuery(query);
   }
