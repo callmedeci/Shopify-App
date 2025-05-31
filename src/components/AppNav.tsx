@@ -4,7 +4,7 @@ import Link from 'next/link';
 const links = [
   { name: 'Home', href: '/' },
   { name: 'Products', href: '/products' },
-  { name: 'About us', href: '/about' },
+  { name: 'Contact us', href: '/contact' },
 ];
 
 function AppNav() {
