@@ -8,7 +8,8 @@
       "stock_status": true,
       "rating": 4.6,
       "description": "Soft cotton tee for daily use.",
-      "category": "Apparel"
+      "category": "Apparel",
+      "intro": "Stay comfy and stylish every day with our Classic Cotton T-Shirt, crafted from premium, breathable cotton for ultimate comfort. Whether you're lounging at home or heading out for a casual day, this versatile tee is an absolute wardrobe essential, promising a perfect blend of softness and durability that will make it your go-to choice time and time again. Experience the difference of quality fabric and a timeless design that never goes out of style."
     },
     {
       "id": "SKU002",
@@ -18,7 +19,8 @@
       "stock_status": true,
       "rating": 4.7,
       "description": "Noise-canceling wireless headphones.",
-      "category": "Electronics"
+      "category": "Electronics",
+      "intro": "Experience immersive sound without the wires with these premium Bluetooth Wireless Headphones. Designed for superior audio quality and exceptional comfort, they feature advanced noise-canceling technology that lets you dive deep into your music, podcasts, or calls without distractions. With a long-lasting battery and a sleek, foldable design, these headphones are your perfect companion for travel, work, or simply enjoying your favorite tunes wherever you go."
     },
     {
       "id": "SKU003",
@@ -28,7 +30,8 @@
       "stock_status": false,
       "rating": 4.3,
       "description": "Keeps drinks hot or cold for hours.",
-      "category": "Kitchen & Dining"
+      "category": "Kitchen & Dining",
+      "intro": "Hydrate in style and stay refreshed throughout your day with our durable Stainless Steel Water Bottle. Engineered with double-wall insulation, this bottle is designed to keep your cold drinks icy for up to 24 hours and your hot beverages steaming for up to 12 hours, making it ideal for any adventure. Its sleek design and robust construction ensure it's not only a stylish accessory but also a reliable companion for your daily hydration needs, whether you're at the gym, in the office, or exploring the outdoors."
     },
     {
       "id": "SKU004",
@@ -38,7 +41,8 @@
       "stock_status": true,
       "rating": 4.9,
       "description": "Stylish leather backpack for laptops.",
-      "category": "Bags & Luggage"
+      "category": "Bags & Luggage",
+      "intro": "Elevate your everyday carry with this sleek and sophisticated Leather Laptop Backpack. Crafted from premium, genuine leather, it combines timeless elegance with modern functionality, offering a secure and stylish way to transport your laptop and other essentials. With thoughtfully designed compartments and a comfortable fit, this backpack is perfect for professionals, students, and travelers who demand both style and practicality from their accessories. Make a statement wherever you go with this durable and chic companion."
     },
     {
       "id": "SKU005",
@@ -48,7 +52,8 @@
       "stock_status": true,
       "rating": 4.5,
       "description": "100 organic tea bags with flavor.",
-      "category": "Groceries"
+      "category": "Groceries",
+      "intro": "Brew a better day and invigorate your senses with our flavorful Organic Green Tea Bags. Sourced from the finest organic tea leaves, each bag delivers a smooth, delicate, and aromatic experience that's perfect for a moment of calm or a gentle energy boost. With 100 tea bags in every pack, you'll have an ample supply of this wholesome and refreshing beverage, known for its numerous health benefits and delightful taste. Start your morning or wind down your evening with a cup of pure goodness."
     },
     {
       "id": "SKU006",
@@ -58,7 +63,8 @@
       "stock_status": false,
       "rating": 4.2,
       "description": "HD camera with motion alerts.",
-      "category": "Smart Home"
+      "category": "Smart Home",
+      "intro": "Protect your space smarter and gain peace of mind with our advanced Smart Home Security Camera. Featuring crystal-clear HD video, motion detection alerts, and two-way audio, this camera allows you to monitor your home from anywhere, at any time, directly from your smartphone. Easy to install and seamlessly integrated with your smart home ecosystem, it's an indispensable tool for keeping an eye on your property and loved ones, ensuring their safety and security around the clock."
     },
     {
       "id": "SKU007",
@@ -68,7 +74,8 @@
       "stock_status": true,
       "rating": 4.1,
       "description": "Three pan set with non-stick coat.",
-      "category": "Kitchen & Dining"
+      "category": "Kitchen & Dining",
+      "intro": "Cook like a pro and elevate your culinary creations with this essential Non-Stick Frying Pan Set. This 3-piece collection features durable pans with a premium non-stick coating, ensuring effortless food release and quick, easy cleanup. Perfect for everything from delicate eggs to hearty stir-fries, these pans distribute heat evenly for consistent cooking results, making them an indispensable addition to any kitchen, whether you're a seasoned chef or just starting your cooking journey."
     },
     {
       "id": "SKU008",
@@ -78,7 +85,8 @@
       "stock_status": true,
       "rating": 4.8,
       "description": "Non-slip mat with strap included.",
-      "category": "Sports & Outdoors"
+      "category": "Sports & Outdoors",
+      "intro": "Level up your workouts and find your zen with this comfy and portable Yoga Mat. Designed with a high-density, non-slip surface, it provides optimal grip and cushioning for all your yoga poses, Pilates exercises, and fitness routines. Lightweight and complete with a convenient carrying strap, this mat makes it easy to transport to your studio, gym, or favorite outdoor spot, ensuring you can practice anytime, anywhere, and achieve your fitness goals with comfort and stability."
     },
     {
       "id": "SKU009",
@@ -88,7 +96,8 @@
       "stock_status": true,
       "rating": 4.6,
       "description": "High-capacity charger with 2 ports.",
-      "category": "Electronics Accessories"
+      "category": "Electronics Accessories",
+      "intro": "Stay charged on the go and never run out of power again with our powerful 20000mAh Portable Power Bank. This high-capacity charger features dual USB ports, allowing you to quickly and efficiently charge multiple devices simultaneously, from smartphones and tablets to smartwatches and headphones. Its compact and lightweight design makes it an ideal travel companion, ensuring you have reliable power wherever your adventures take you, keeping you connected and productive throughout your day."
     },
     {
       "id": "SKU010",
@@ -98,7 +107,8 @@
       "stock_status": false,
       "rating": 4.9,
       "description": "Popular fiction read in hardcover.",
-      "category": "Books"
+      "category": "Books",
+      "intro": "Get lost in a page-turner and embark on an unforgettable literary journey with this Hardcover Fiction Bestseller. Dive into captivating narratives, compelling characters, and richly imagined worlds that will keep you enthralled from the first page to the last. Perfect for avid readers and those looking for their next great escape, this critically acclaimed novel promises hours of engaging entertainment and thought-provoking storytelling, making it a must-have addition to your personal library."
     },
     {
       "id": "SKU011",
@@ -108,7 +118,8 @@
       "stock_status": true,
       "rating": 4.4,
       "description": "Grinds coffee beans and spices.",
-      "category": "Kitchen Appliances"
+      "category": "Kitchen Appliances",
+      "intro": "Start your mornings right and awaken your senses with the rich aroma of freshly ground coffee from this efficient Electric Coffee Grinder. Designed for precision and convenience, it allows you to grind whole coffee beans to your preferred consistency, unlocking their full flavor potential for a superior brewing experience. Beyond coffee, this versatile grinder is also perfect for spices, making it a valuable addition to any kitchen for those who appreciate the freshest ingredients and vibrant tastes."
     },
     {
       "id": "SKU012",
@@ -118,7 +129,8 @@
       "stock_status": true,
       "rating": 4.7,
       "description": "Ergonomic mouse with long life.",
-      "category": "Computer Accessories"
+      "category": "Computer Accessories",
+      "intro": "Click smarter and enhance your productivity with this sleek, ergonomic Wireless Mouse. Designed for comfort and precision, it offers smooth navigation and responsive control, reducing strain during long hours of use. With reliable wireless connectivity and a long-lasting battery, this mouse provides the freedom and flexibility you need to work efficiently from anywhere, making it the perfect upgrade for your computer setup, whether you're at home, in the office, or on the go."
     }
   ]
 }
