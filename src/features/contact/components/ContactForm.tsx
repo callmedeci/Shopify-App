@@ -8,7 +8,6 @@ import toast from 'react-hot-toast';
 import { sendContactMessage } from '../action/sendMessage';
 import { contactSchema } from '../schema';
 import { ContactFormValues } from '../types';
-import SubmitButton from '@/components/SubmitButton';
 import Button from '@/components/Button';
 import { LoaderCircle, Send } from 'lucide-react';
 
