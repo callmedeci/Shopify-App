@@ -12,8 +12,22 @@ export function useSearchQueryParams(name: string) {
 
   useEffect(
     function () {
+      const searchQuery = searchParams.get(name);
+      if (searchQuery) setQuery(searchQuery);
+    },
+    [name, searchParams]
+  );
+
+  useEffect(
+    function () {
+      const params = new URLSearchParams(searchParams);
+
+      if (!query) {
+        params.delete(name);
+        router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+      }
+
       if (query) {
-        const params = new URLSearchParams(searchParams);
         params.set(name, query);
         router.replace(`${pathname}?${params.toString()}`, { scroll: false });
       }
