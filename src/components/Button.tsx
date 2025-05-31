@@ -30,12 +30,13 @@ function isLinkProps(
 
 function Button(props: ButtonProps | ButtonLinkProps) {
   const baseStyle =
-    'text-zinc-200 px-2 py-2 rounded-lg transition-all shadow focus:outline-none duration-300 flex items-center gap-2 flex items-center justify-center disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 cursor-pointer text-xs md:text-base md:px-3 font-medium';
+    'text-zinc-300 px-2 py-2 rounded-lg transition-all shadow focus:outline-none duration-300 flex items-center gap-2 flex items-center justify-center disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 cursor-pointer text-xs md:text-base md:px-3 font-medium';
 
   if (isLinkProps(props)) {
     const { href, className = '', children, icon, ...otherProps } = props;
 
-    const linkStyle = 'ring-2 ring-indigo-600';
+    const linkStyle =
+      'ring-2 ring-indigo-500 hover:shadow-md hover:ring-indigo-600 hover:text-zinc-100 hover:-translate-y-0.5';
     return (
       <Link
         href={href}
