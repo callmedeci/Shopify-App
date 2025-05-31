@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": "SKU001",
+      "image": "https://images.pexels.com/photos/991509/pexels-photo-991509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Classic Cotton T-Shirt",
+      "price": 22.99,
+      "stock_status": true,
+      "rating": 4.6,
+      "description": "Soft cotton tee for daily use.",
+      "category": "Apparel"
+    },
+    {
+      "id": "SKU002",
+      "image": "https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Bluetooth Wireless Headphones",
+      "price": 89.95,
+      "stock_status": true,
+      "rating": 4.7,
+      "description": "Noise-canceling wireless headphones.",
+      "category": "Electronics"
+    },
+    {
+      "id": "SKU003",
+      "image": "https://images.pexels.com/photos/30469934/pexels-photo-30469934/free-photo-of-stainless-steel-thermos-flask-with-lid-against-black-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Stainless Steel Water Bottle",
+      "price": 26.5,
+      "stock_status": false,
+      "rating": 4.3,
+      "description": "Keeps drinks hot or cold for hours.",
+      "category": "Kitchen & Dining"
+    },
+    {
+      "id": "SKU004",
+      "image": "https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Leather Laptop Backpack",
+      "price": 135.0,
+      "stock_status": true,
+      "rating": 4.9,
+      "description": "Stylish leather backpack for laptops.",
+      "category": "Bags & Luggage"
+    },
+    {
+      "id": "SKU005",
+      "image": "https://images.pexels.com/photos/8329281/pexels-photo-8329281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Organic Green Tea Bags (100 count)",
+      "price": 16.25,
+      "stock_status": true,
+      "rating": 4.5,
+      "description": "100 organic tea bags with flavor.",
+      "category": "Groceries"
+    },
+    {
+      "id": "SKU006",
+      "image": "https://images.pexels.com/photos/9795001/pexels-photo-9795001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Smart Home Security Camera",
+      "price": 109.99,
+      "stock_status": false,
+      "rating": 4.2,
+      "description": "HD camera with motion alerts.",
+      "category": "Smart Home"
+    },
+    {
+      "id": "SKU007",
+      "image": "https://images.pexels.com/photos/4910217/pexels-photo-4910217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Non-Stick Frying Pan Set (3-Piece)",
+      "price": 72.8,
+      "stock_status": true,
+      "rating": 4.1,
+      "description": "Three pan set with non-stick coat.",
+      "category": "Kitchen & Dining"
+    },
+    {
+      "id": "SKU008",
+      "image": "https://images.pexels.com/photos/6193813/pexels-photo-6193813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Yoga Mat with Carrying Strap",
+      "price": 35.5,
+      "stock_status": true,
+      "rating": 4.8,
+      "description": "Non-slip mat with strap included.",
+      "category": "Sports & Outdoors"
+    },
+    {
+      "id": "SKU009",
+      "image": "https://images.pexels.com/photos/5208777/pexels-photo-5208777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Portable Power Bank 20000mAh",
+      "price": 49.99,
+      "stock_status": true,
+      "rating": 4.6,
+      "description": "High-capacity charger with 2 ports.",
+      "category": "Electronics Accessories"
+    },
+    {
+      "id": "SKU010",
+      "image": "https://images.pexels.com/photos/762686/pexels-photo-762686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Hardcover Fiction Bestseller",
+      "price": 28.0,
+      "stock_status": false,
+      "rating": 4.9,
+      "description": "Popular fiction read in hardcover.",
+      "category": "Books"
+    },
+    {
+      "id": "SKU011",
+      "image": "https://images.pexels.com/photos/19987745/pexels-photo-19987745/free-photo-of-sticker-on-black-container.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Electric Coffee Grinder",
+      "price": 42.75,
+      "stock_status": true,
+      "rating": 4.4,
+      "description": "Grinds coffee beans and spices.",
+      "category": "Kitchen Appliances"
+    },
+    {
+      "id": "SKU012",
+      "image": "https://images.pexels.com/photos/32250609/pexels-photo-32250609/free-photo-of-sleek-wireless-mouse-on-vibrant-yellow-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "name": "Wireless Mouse",
+      "price": 29.99,
+      "stock_status": true,
+      "rating": 4.7,
+      "description": "Ergonomic mouse with long life.",
+      "category": "Computer Accessories"
+    }
+  ]
+}
