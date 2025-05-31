@@ -31,7 +31,7 @@ async function ProductDetailsPage({ params }: ParamsType) {
   } = product;
 
   return (
-    <section className='grid md:grid-cols-2 gap-5'>
+    <section className='grid md:grid-cols-2 gap-5 max-w-7xl mx-auto'>
       <div className='w-full h-170 relative rounded-b-lg shadow overflow-hidden'>
         <Image
           src={image}
