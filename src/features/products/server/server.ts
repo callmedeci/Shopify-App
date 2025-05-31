@@ -6,8 +6,6 @@ export async function getProducts(): Promise<ProductsType> {
 
   const data = await res.json();
 
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-
   return data;
 }
 
