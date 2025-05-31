@@ -59,9 +59,9 @@ function Button(props: ButtonProps | ButtonLinkProps) {
 
   const buttonStyle = {
     default:
-      'enabled:focus:ring-2 enabled:focus:ring-indigo-600 enabled:hover:text-zinc-100 bg-indigo-500 enabled:hover:bg-indigo-600 enabled:focus:bg-indigo-600',
+      'enabled:focus:ring-2 enabled:focus:ring-zinc-600 enabled:hover:text-zinc-100 bg-indigo-600 enabled:hover:bg-zinc-600 enabled:focus:bg-zinc-600',
     ghost:
-      'bg-transparent ring-2 ring-indigo-500 text-indigo-500 enabled:hover:ring-zinc-600 enabled:hover:text-zinc-300 disabled:ring-zinc-500 disabled:text-zinc-500',
+      'bg-transparent ring-2 ring-indigo-500 text-indigo-500 enabled:hover:ring-zinc-600 enabled:hover:text-zinc-300 disabled:ring-zinc-500 disabled:text-zinc-500 disabled:cursor-disallow',
   };
 
   return (
