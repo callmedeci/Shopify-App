@@ -1,6 +1,6 @@
 import Button from '@/components/Button';
 import Stars from '@/components/Stars';
-import { getProductById, getProducts } from '@/features/products/server/server';
+import { getProductById } from '@/features/products/server/server';
 import {
   ChartBarStacked,
   CircleSlash,
@@ -10,15 +10,6 @@ import {
   ShoppingCart,
 } from 'lucide-react';
 import Image from 'next/image';
-
-export async function generateStaticParams() {
-  const products = await getProducts();
-  const productIds = products.map((product) => ({
-    productId: product.id,
-  }));
-
-  return productIds;
-}
 
 type ParamsType = { params: Promise<{ productId: string }> };
 
