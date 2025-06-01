@@ -1,11 +1,25 @@
 import Button from '@/components/Button';
 import Stars from '@/components/Stars';
 import AddToCartButton from '@/features/cart/components/AddToCartButton';
-import { getProductById } from '@/features/products/server/server';
+import { getProductById, getProducts } from '@/features/products/server/server';
 import { ChartBarStacked, CircleSlash, DollarSign } from 'lucide-react';
 import Image from 'next/image';
 
 type ParamsType = { params: Promise<{ productId: string }> };
+
+export async function generateMetadata({ params }: ParamsType) {
+  const { productId } = await params;
+  const product = await getProductById(productId);
+
+  return { title: product.name };
+}
+
+export async function generateStaticParams() {
+  const products = await getProducts();
+  const ids = products.map((product) => ({ productId: product.id }));
+
+  return ids;
+}
 
 async function ProductDetailsPage({ params }: ParamsType) {
   const { productId } = await params;
