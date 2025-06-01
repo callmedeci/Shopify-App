@@ -1,5 +1,6 @@
 import { RESULT_PER_PAGE } from '../config';
 import { getProducts } from '../server/server';
+import { getProductsByQuery, getProductsPerPage } from '../utils/utils';
 import Pagination from './Pagination';
 import ProductItem from './ProductItem';
 
@@ -11,23 +12,8 @@ async function ProductsList({ searchParams }: ProductsListProps) {
   const products = await getProducts();
   const { page, query } = searchParams;
 
-  //--- Handle Search ---
-  const searchQuery = String(query).trim().toLowerCase();
-  const searchedProducts = query
-    ? products.filter(
-        (product) =>
-          product.name.toLowerCase().includes(searchQuery) ||
-          product.description.toLowerCase().includes(searchQuery) ||
-          product.category.toLowerCase().includes(searchQuery)
-      )
-    : products;
-
-  //--- Handle Page Navihation ---
-  const currentPage = query ? 1 : Number(page) || 1;
-  const productsPerPage = searchedProducts.slice(
-    (currentPage - 1) * RESULT_PER_PAGE,
-    currentPage * RESULT_PER_PAGE
-  );
+  const searchedProducts = getProductsByQuery(query, products);
+  const productsPerPage = getProductsPerPage(query, page, searchedProducts);
 
   if (!productsPerPage || productsPerPage.length === 0) {
     return <p className='text-zinc-300'>No products found.</p>;
