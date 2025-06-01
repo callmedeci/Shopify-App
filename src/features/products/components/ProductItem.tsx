@@ -1,20 +1,18 @@
-import { CircleSlash, DollarSign, ShoppingCart } from 'lucide-react';
+import { CircleSlash, DollarSign } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import Button from '@/components/Button';
 import Stars from '@/components/Stars';
 import { ProductType } from '../types';
+import AddToCartButton from '../../cart/components/AddToCartButton';
 
 function ProductItem({ product }: { product: ProductType }) {
   const { description, id, image, name, price, rating, stock_status } = product;
 
   return (
-    <li>
-      <Link
-        href={`/products/${id}`}
-        className='flex flex-col gap-3 p-4 bg-zinc-900/50 rounded-lg hover:bg-zinc-900 transition-colors h-110 shadow'
-      >
+    <li className='flex flex-col gap-3 p-4 bg-zinc-900/50 rounded-lg hover:bg-zinc-900 transition-colors h-110 shadow'>
+      <Link href={`/products/${id}`} className='flex flex-col gap-3'>
         <div className='relative w-full h-48 rounded-lg overflow-hidden'>
           <Image
             src={image}
@@ -38,15 +36,17 @@ function ProductItem({ product }: { product: ProductType }) {
 
           <Stars rating={rating} />
         </div>
+      </Link>
 
+      <div className='flex mt-auto'>
         {!stock_status ? (
-          <Button disabled icon={<CircleSlash />}>
+          <Button className='w-full' disabled icon={<CircleSlash />}>
             Out of Stock
           </Button>
         ) : (
-          <Button icon={<ShoppingCart />}>Add to cart</Button>
+          <AddToCartButton product={product} />
         )}
-      </Link>
+      </div>
     </li>
   );
 }

@@ -1,14 +1,8 @@
 import Button from '@/components/Button';
 import Stars from '@/components/Stars';
+import AddToCartButton from '@/features/cart/components/AddToCartButton';
 import { getProductById } from '@/features/products/server/server';
-import {
-  ChartBarStacked,
-  CircleSlash,
-  DollarSign,
-  MinusCircle,
-  PlusCircle,
-  ShoppingCart,
-} from 'lucide-react';
+import { ChartBarStacked, CircleSlash, DollarSign } from 'lucide-react';
 import Image from 'next/image';
 
 type ParamsType = { params: Promise<{ productId: string }> };
@@ -32,7 +26,7 @@ async function ProductDetailsPage({ params }: ParamsType) {
 
   return (
     <section className='grid md:grid-cols-2 gap-5 max-w-7xl mx-auto'>
-      <div className='w-full h-170 relative rounded-b-lg shadow overflow-hidden'>
+      <div className='w-full h-96 md:h-170 relative rounded-b-lg shadow overflow-hidden'>
         <Image
           src={image}
           alt={`${name} picture`}
@@ -61,35 +55,18 @@ async function ProductDetailsPage({ params }: ParamsType) {
           {description}
         </p>
 
-        <h3 className='text-3xl font-bold text-zinc-100 mt-5 flex items-center'>
-          <DollarSign className='size-9' />
-          {price}
+        <h3 className='text-3xl font-bold text-zinc-100 mt-5 flex items-center mb-2'>
+          <DollarSign className='size-10' />
+          <span>{price}</span>
         </h3>
 
-        <div className='mt-auto w-full flex justify-between items-end'>
-          <div className='flex flex-col gap-2'>
-            <p className='text-zinc-300 font-semibold'>Quantity:</p>
-            <div className='flex gap-2 ring-2 ring-zinc-600 rounded-lg text-zinc-400 shadow'>
-              <Button
-                disabled={!stock_status}
-                variant='ghost'
-                icon={<MinusCircle />}
-              />
-              <span className='text-xs md:text-sm font-bold px-3 py-2'>1</span>
-              <Button
-                disabled={!stock_status}
-                variant='ghost'
-                icon={<PlusCircle />}
-              />
-            </div>
-          </div>
-
+        <div className='mt-auto w-full flex justify-between items-end my-5'>
           {!stock_status ? (
-            <Button disabled icon={<CircleSlash />}>
+            <Button className='w-full' disabled icon={<CircleSlash />}>
               Out of Stock
             </Button>
           ) : (
-            <Button icon={<ShoppingCart />}>Add to cart</Button>
+            <AddToCartButton product={product} />
           )}
         </div>
       </div>

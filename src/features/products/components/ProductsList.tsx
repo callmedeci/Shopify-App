@@ -21,7 +21,7 @@ async function ProductsList({ searchParams }: ProductsListProps) {
 
   return (
     <div className='flex flex-col w-full'>
-      <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
+      <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3'>
         {productsPerPage.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}

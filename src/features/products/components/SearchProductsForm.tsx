@@ -22,7 +22,7 @@ function SearchProductsForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='w-full sm:w-max' onSubmit={handleSubmit}>
       <Input
         icon={<Search className='szie-5' />}
         placeholder='Search products...'

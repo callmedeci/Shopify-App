@@ -3,6 +3,7 @@ import { type ReactNode } from 'react';
 
 import './globals.css';
 import Header from '@/components/Header';
+import CartProvider from '@/features/cart/context/CartContext';
 
 export const metadata = {
   title: {
@@ -25,7 +26,9 @@ function RootLayout({ children }: { children: ReactNode }) {
       >
         <Header />
 
-        <main className='px-2 md:px-5'>{children}</main>
+        <main className='px-2 md:px-5'>
+          <CartProvider>{children}</CartProvider>
+        </main>
       </body>
     </html>
   );

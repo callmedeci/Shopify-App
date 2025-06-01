@@ -13,7 +13,7 @@ async function ProductsPage({ searchParams }: Props) {
 
   return (
     <div className='flex flex-col my-10 text-zinc-400 max-w-7xl mx-auto'>
-      <div className='flex flex-col sm:flex-row justify-between mb-5 gap-2'>
+      <div className='flex flex-col sm:flex-row justify-between sm:items-center items-start mb-5 gap-2 w-full'>
         <h1 className='text-3xl md:text-5xl font-bold text-zinc-100'>
           All Products
         </h1>

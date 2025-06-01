@@ -14,9 +14,9 @@ function Input({
 }: InputProps) {
   const inputStyle = {
     primary:
-      'bg-zinc-700 text-sm sm:text-base text-zinc-300 placeholder:text-zinc-300/50 ring-indigo-500 focus-within:text-zinc-100',
+      'bg-zinc-700/70 text-sm sm:text-base text-zinc-300 placeholder:text-zinc-300/50 ring-indigo-500 focus-within:text-zinc-100',
     secondary:
-      'bg-zinc-700 text-sm sm:text-base md:text-xl text-zinc-300 placeholder:text-zinc-400/50 ring-zinc-500',
+      'bg-zinc-700/70 text-sm sm:text-base md:text-xl text-zinc-300 placeholder:text-zinc-400/50 ring-zinc-500',
   };
 
   return (

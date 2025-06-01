@@ -10,7 +10,7 @@ import {
 type BaseProps = {
   children?: ReactNode;
   icon?: ReactElement<{ className?: string }>;
-  variant?: 'ghost' | 'default';
+  variant?: 'ghost' | 'default' | 'danger';
 };
 
 type ButtonProps = ComponentPropsWithoutRef<'button'> &
@@ -61,7 +61,10 @@ function Button(props: ButtonProps | ButtonLinkProps) {
     default:
       'enabled:focus:ring-2 enabled:focus:ring-zinc-600 enabled:hover:text-zinc-100 bg-indigo-600 enabled:hover:bg-zinc-600 enabled:focus:bg-zinc-600',
     ghost:
-      'bg-transparent ring-2 ring-indigo-500 text-indigo-500 enabled:hover:ring-zinc-600 enabled:hover:text-zinc-300 disabled:ring-zinc-500 disabled:text-zinc-500 disabled:cursor-disallow',
+      'bg-transparent ring-2 ring-zinc-500 text-zinc-400 enabled:hover:ring-indigo-600 enabled:hover:text-indigo-500 disabled:opacity-50 disabled:cursor-disallow',
+
+    danger:
+      'bg-transparent ring-2 ring-rose-500 text-rose-500 hover:text-rose-600 hover:ring-rose-600 focus:text-rose-600 focus:ring-rose-600 hover:shadow-md',
   };
 
   return (
