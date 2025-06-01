@@ -40,14 +40,14 @@ export function cartReducer(state: CartList, action: Action): CartList {
 
     case 'cart/item/increase': {
       return state.map((item) =>
-        item.id === action.payload ? { ...item, amount: item.amount++ } : item
+        item.id === action.payload ? { ...item, amount: item.amount + 1 } : item
       );
     }
 
     case 'cart/item/decrease': {
       return state.map((item) =>
         item.id === action.payload
-          ? { ...item, amount: item.amount > 1 ? item.amount-- : 1 }
+          ? { ...item, amount: item.amount > 1 ? item.amount - 1 : 1 }
           : item
       );
     }
