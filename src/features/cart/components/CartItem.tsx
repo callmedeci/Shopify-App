@@ -24,7 +24,7 @@ function CartItem({ item }: { item: CartItemType }) {
           </p>
         </div>
 
-        <div className='flex flex-col items-start sm:items-end gap-1 sm:ml-auto mt-4 sm:mt-0'>
+        <div className='w-full sm:w-max flex flex-row sm:flex-col items-end gap-1 sm:ml-auto mt-4 sm:mt-0 justify-between'>
           <div className='flex items-center gap-1 text-2xl font-bold text-zinc-50'>
             <DollarSign className='size-6' />
             <span>{totalPrice}</span>

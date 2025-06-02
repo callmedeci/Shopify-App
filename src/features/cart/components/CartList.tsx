@@ -18,7 +18,7 @@ function CartList() {
     );
 
   return (
-    <ul className='flex flex-col gap-3'>
+    <ul className='grid lg:grid-cols-2 gap-5'>
       {cart.map((item) => (
         <CartItem key={item.id} item={item} />
       ))}
