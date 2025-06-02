@@ -1,9 +1,15 @@
 'use client';
 
-import { createContext, use, useReducer, type ReactNode } from 'react';
-import { cartReducer } from './cartReducer';
-import { CartList } from '../types';
 import { ProductType } from '@/features/products/types';
+import {
+  createContext,
+  use,
+  useEffect,
+  useReducer,
+  type ReactNode,
+} from 'react';
+import { CartList } from '../types';
+import { cartReducer } from './cartReducer';
 
 type CartType = {
   cart: CartList;
@@ -19,6 +25,17 @@ const initialState: CartList = [];
 
 function CartProvider({ children }: { children: ReactNode }) {
   const [cart, dispatch] = useReducer(cartReducer, initialState);
+
+  useEffect(function () {
+    const storedCart = localStorage.getItem('cart');
+
+    if (storedCart)
+      dispatch({ type: 'cart/init', payload: JSON.parse(storedCart) });
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
 
   function handleAddToCart(product: ProductType) {
     dispatch({ type: 'cart/add', payload: product });

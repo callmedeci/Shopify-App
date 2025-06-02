@@ -1,6 +1,11 @@
 import { ProductType } from '@/features/products/types';
 import { type CartList } from '../types';
 
+type ActionInit = {
+  type: 'cart/init';
+  payload: CartList;
+};
+
 type ActionAddToCart = {
   type: 'cart/add';
   payload: ProductType;
@@ -22,6 +27,7 @@ type ActionDeleteFromCart = {
 };
 
 type Action =
+  | ActionInit
   | ActionAddToCart
   | ActionIncreaseCartItem
   | ActionDecreaseCartItem
@@ -29,6 +35,10 @@ type Action =
 
 export function cartReducer(state: CartList, action: Action): CartList {
   switch (action.type) {
+    case 'cart/init': {
+      return [...state, ...action.payload];
+    }
+
     case 'cart/add': {
       const existingItemIndex = state.findIndex(
         (cart) => cart.id === action.payload.id
