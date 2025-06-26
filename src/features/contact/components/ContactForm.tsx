@@ -17,6 +17,7 @@ function ContactForm() {
   });
 
   const pending = formState.isSubmitting;
+  console.log(pending);
 
   useEffect(
     function () {
